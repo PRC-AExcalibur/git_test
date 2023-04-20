@@ -1,0 +1,13 @@
+ZKHM_CXX := g++
+
+ZKHM_CXX_FLAGS_RELEASE := -std=gnu++17 -ggdb3 -O2 -Werror -Wall -Wextra -Wshadow -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -fPIC -pthread -fno-strict-aliasing   -fno-delete-null-pointer-checks -fno-strict-overflow -fsigned-char
+
+ZKHM_CXX_FLAGS_DEBUG := -std=gnu++17 -ggdb3 -O0 -Werror -Wall -Wextra -Wshadow -Wno-unused-parameter -Wno-unused-variable -Wno-unused-but-set-variable -fPIC -pthread -fno-strict-aliasing   -fno-delete-null-pointer-checks -fno-strict-overflow -fsigned-char
+
+ZKHM_AR := ar
+ZKHM_AR_FLAGS := -crs
+
+ZKHM_LINK_FLAGS := -static -rdynamic -pthread 
+ZKHM_LIBS_FLAGS := -lrt -lm -ldl
+
+NAME := compile_info
